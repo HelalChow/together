@@ -77,6 +77,12 @@ class MapViewController: UIViewController {
         let jersey = MKPointAnnotation()
         jersey.title = "It's My Park"
         jersey.coordinate = CLLocationCoordinate2D(latitude: 40.7178, longitude: -74.0431)
+        
+        mapView.addAnnotation(timesSqaureAnnotation)
+        mapView.addAnnotation(empireStateAnnotation)
+        mapView.addAnnotation(brooklynBridge)
+        mapView.addAnnotation(prospectPark)
+        mapView.addAnnotation(jersey)
     }
     
     func showRoute() {

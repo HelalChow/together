@@ -28,6 +28,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="tAn-Ko-bVO"/>
                     <connections>
+                        <outlet property="mapView" destination="Oqw-Ul-6mY" id="aXj-e6-7Jb"/>
                         <segue destination="e9f-nQ-IhX" kind="modal" id="hfV-iJ-LO3"/>
                     </connections>
                 </viewController>
@@ -243,6 +244,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="LzM-je-Kxc" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yYu-XJ-rLx">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
