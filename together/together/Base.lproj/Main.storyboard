@@ -194,6 +194,7 @@
                                     <color key="titleColor" red="0.50533828449999996" green="0.77670923219999999" blue="0.56942497000000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
+                                    <action selector="registerClicked:" destination="e9f-nQ-IhX" eventType="touchUpInside" id="3Oy-2x-iFg"/>
                                     <segue destination="C7t-kn-rII" kind="showDetail" id="7ZE-1X-qBN"/>
                                 </connections>
                             </button>
@@ -209,6 +210,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="28p-9E-SUb"/>
                     </view>
+                    <connections>
+                        <outlet property="jobDetailImageView" destination="RRD-8c-s6m" id="AIe-Wq-1SG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ncb-NR-rNO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
