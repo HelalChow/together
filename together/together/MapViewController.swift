@@ -60,7 +60,7 @@ class MapViewController: UIViewController {
     func addAnnotations(){
         let timesSqaureAnnotation = MKPointAnnotation()
         timesSqaureAnnotation.title = "9/11 Day of Service"
-        timesSqaureAnnotation.coordinate = CLLocationCoordinate2D(latitude: 40.758896, longitude: -73.9855)
+        timesSqaureAnnotation.coordinate = CLLocationCoordinate2D(latitude: 40.6602, longitude: -73.9985)
         
         let empireStateAnnotation = MKPointAnnotation()
         empireStateAnnotation.title = "Hurricane Dorian Clothing Drive"
