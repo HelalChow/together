@@ -23,8 +23,8 @@ class Event {
 
 //dummy varaibles
 extension Event {
-    static let e1 = Event(image: UIImage(named: "Hurricane") ?? UIImage(), date: "8", day: "Mon")
-    static let e2 = Event(image: UIImage(named: "Food") ?? UIImage(), date: "15", day: "Tue")
-    static let e3 = Event(image: UIImage(named: "911") ?? UIImage(), date: "29", day: "Sun")
-    static let e4 = Event(image: UIImage(named: "Park") ?? UIImage(), date: "14", day: "Mon")
+    static let e1 = Event(image: UIImage(named: "Hurricane") ?? UIImage(), date: "8", day: "Sat")
+    static let e2 = Event(image: UIImage(named: "Food") ?? UIImage(), date: "11", day: "Tue")
+    static let e3 = Event(image: UIImage(named: "911") ?? UIImage(), date: "9", day: "Sun")
+    static let e4 = Event(image: UIImage(named: "Park") ?? UIImage(), date: "12", day: "Sat")
 }
