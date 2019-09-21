@@ -27,10 +27,28 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="tAn-Ko-bVO"/>
+                    <connections>
+                        <segue destination="e9f-nQ-IhX" kind="modal" id="hfV-iJ-LO3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1868" y="20.689655172413794"/>
+        </scene>
+        <!--Details View Controller-->
+        <scene sceneID="Sm3-OM-L0D">
+            <objects>
+                <viewController id="e9f-nQ-IhX" customClass="DetailsViewController" customModule="together" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ot8-uT-sQi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="28p-9E-SUb"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ncb-NR-rNO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2898" y="28"/>
         </scene>
         <!--Item-->
         <scene sceneID="g81-7n-PPo">
