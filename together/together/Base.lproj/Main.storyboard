@@ -35,6 +35,31 @@
             </objects>
             <point key="canvasLocation" x="1868" y="20.689655172413794"/>
         </scene>
+        <!--Profile View Controller-->
+        <scene sceneID="9F6-aJ-XuL">
+            <objects>
+                <viewController id="C7t-kn-rII" customClass="ProfileViewController" customModule="together" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="k4B-hz-zL6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="profileBackground" translatesAutoresizingMaskIntoConstraints="NO" id="xag-4T-Ujk">
+                                <rect key="frame" x="0.0" y="-10" width="375" height="220"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img" translatesAutoresizingMaskIntoConstraints="NO" id="BsD-WQ-oOI">
+                                <rect key="frame" x="63" y="75" width="264" height="221"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="F9Y-oC-vsj"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nk1-qv-hZE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2252" y="854.92610837438428"/>
+        </scene>
         <!--Details View Controller-->
         <scene sceneID="Sm3-OM-L0D">
             <objects>
@@ -42,13 +67,38 @@
                     <view key="view" contentMode="scaleToFill" id="Ot8-uT-sQi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="new 1" translatesAutoresizingMaskIntoConstraints="NO" id="RRD-8c-s6m">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cmm-Vs-3qI">
+                                <rect key="frame" x="291" y="243" width="68" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="16"/>
+                                <state key="normal" title="Register">
+                                    <color key="titleColor" red="0.50533828449999996" green="0.77670923219999999" blue="0.56942497000000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <segue destination="C7t-kn-rII" kind="showDetail" id="7ZE-1X-qBN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bmH-og-rCe">
+                                <rect key="frame" x="16" y="243" width="96" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="16"/>
+                                <state key="normal" title="Show Route">
+                                    <color key="titleColor" red="0.20317763690000001" green="0.63899402819999995" blue="0.77670923219999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="28p-9E-SUb"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ncb-NR-rNO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2898" y="28"/>
+            <point key="canvasLocation" x="2896.8000000000002" y="27.339901477832512"/>
         </scene>
         <!--Item-->
         <scene sceneID="g81-7n-PPo">
@@ -87,4 +137,9 @@
             <point key="canvasLocation" x="128.98550724637681" y="20.758928571428569"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="img" width="192" height="192"/>
+        <image name="new 1" width="1125" height="2436"/>
+        <image name="profileBackground" width="375" height="207"/>
+    </resources>
 </document>
