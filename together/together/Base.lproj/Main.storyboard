@@ -36,7 +36,7 @@
             </objects>
             <point key="canvasLocation" x="1868" y="20.689655172413794"/>
         </scene>
-        <!--Profile View Controller-->
+        <!--Item-->
         <scene sceneID="9F6-aJ-XuL">
             <objects>
                 <viewController id="C7t-kn-rII" customClass="ProfileViewController" customModule="together" customModuleProvider="target" sceneMemberID="viewController">
@@ -167,6 +167,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="F9Y-oC-vsj"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" image="user" id="JHJ-cS-BkP"/>
                     <connections>
                         <outlet property="eventTableView" destination="FcP-9v-cMw" id="3qG-GJ-Ake"/>
                     </connections>
@@ -223,7 +224,7 @@
         <scene sceneID="g81-7n-PPo">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="m49-ou-jSN" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="DFr-29-tjb"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="mapMarkedAlt" id="DFr-29-tjb"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xEO-gp-I8c">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
@@ -250,6 +251,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="m49-ou-jSN" kind="relationship" relationship="viewControllers" id="pdE-cU-tS3"/>
+                        <segue destination="C7t-kn-rII" kind="relationship" relationship="viewControllers" id="Olh-S9-L4X"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q8m-dZ-vt5" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -259,9 +261,14 @@
     </scenes>
     <resources>
         <image name="img" width="192" height="192"/>
+        <image name="mapMarkedAlt" width="27" height="24"/>
         <image name="new 1" width="1125" height="2436"/>
         <image name="pen" width="14" height="14"/>
         <image name="plus" width="720" height="720"/>
         <image name="profileBackground" width="375" height="207"/>
+        <image name="user" width="20" height="23"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Olh-S9-L4X"/>
+    </inferredMetricsTieBreakers>
 </document>
