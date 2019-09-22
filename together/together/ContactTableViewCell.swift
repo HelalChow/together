@@ -14,10 +14,12 @@ class ContactTableViewCell: UITableViewCell {
     @IBOutlet weak var profileView: UIImageView!
     @IBOutlet weak var pointsLabel: UILabel!
     
-    
+//    var images : UIImage = UIImage(named:"img-1")!
+    let images = ["img", "profile", "profile copy", "profile copy 2", "profile copy 3"]
     
     func setContact(_ contact: Contact, _ indexPath: Int) {
         nameLabel.text = contact.firstName + " " + contact.familyName
+        profileView.image = UIImage(named: images[indexPath%5])
         
     }
     
