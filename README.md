@@ -28,10 +28,10 @@
 
 ## Useful Links
 - [git ignore + storyboard merge conflict resolves](https://guides.codepath.com/ios/Using-Git-with-Terminal)
-- [Our Team Slack](https://hackrpi2019.slack.com/messages/GGYN866Q0/)
 - [pod merge conflict](https://medium.com/@amlcurran/how-to-deal-with-conflicts-in-pod-folders-2eb9fa20f465)
 - [Apple ML Kit](https://www.youtube.com/watch?v=p6GA8ODlnX0)
-- [Tripadvisor API (u / p / api code in email)](https://developer-tripadvisor.com/partner/json-api/)
+- [IBM Cloud](https://cloud.ibm.com/)
+
 
 
 ## Team
