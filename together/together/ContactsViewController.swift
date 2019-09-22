@@ -73,6 +73,12 @@ extension ContactsViewController: UITableViewDataSource, UITableViewDelegate{
     }
     
 }
+
+extension ContactsViewController: ContactDelegate {
+    func didFinishUpdates() {
+        contactListTableView.reloadData()
+    }
+}
     
 
 
