@@ -16,12 +16,12 @@ class ContactTableViewCell: UITableViewCell {
     
 //    var images : UIImage = UIImage(named:"img-1")!
     let images = ["profile", "profile copy", "profile copy 2", "profile copy 3"]
-    let points = ["328", "251", "86", "93", "107"]
+    let points = ["328", "251", "86", "93", "107", "65"]
     
     func setContact(_ contact: Contact, _ indexPath: Int) {
         nameLabel.text = contact.firstName + " " + contact.familyName
         profileView.image = UIImage(named: images[indexPath%4])
-        pointsLabel.text = points[indexPath%5]
+        pointsLabel.text = points[indexPath%6]
         
     }
     

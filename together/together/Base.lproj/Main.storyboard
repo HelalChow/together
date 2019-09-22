@@ -22,6 +22,17 @@
                                 <rect key="frame" x="0.0" y="88" width="375" height="641"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4SI-os-HGe">
+                                <rect key="frame" x="7" y="87" width="67" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <state key="normal" title="Profile">
+                                    <color key="titleColor" red="0.50533828449999996" green="0.77670923219999999" blue="0.56942497000000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <segue destination="C7t-kn-rII" kind="show" id="8ee-ax-vTK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -375,6 +386,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="0F2-19-q9R"/>
-        <segue reference="Vfj-cY-hV2"/>
+        <segue reference="8ee-ax-vTK"/>
     </inferredMetricsTieBreakers>
 </document>
