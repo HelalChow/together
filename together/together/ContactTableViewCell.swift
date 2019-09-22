@@ -19,8 +19,8 @@ class ContactTableViewCell: UITableViewCell {
     func setContact(_ contact: Contact, _ indexPath: Int) {
         nameLabel.text = contact.firstName + " " + contact.familyName
         
-        
-        
     }
+    
+    
     
 }
