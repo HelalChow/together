@@ -247,6 +247,9 @@
                         <viewLayoutGuide key="safeArea" id="RZ7-H1-zio"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="hwa-DF-cde"/>
+                    <connections>
+                        <outlet property="contactListTableView" destination="G90-vo-uuE" id="tvL-1t-1A6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3sR-t4-0bq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
