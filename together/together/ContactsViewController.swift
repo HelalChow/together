@@ -32,11 +32,11 @@ class ContactsViewController: UIViewController {
                 return//this is completion handeling. prolly more bootstrap way of doing this too
             }
             if granted {
-                let keys = [CNContactGivenNameKey, CNContactFamilyNameKey, CNContactPhoneNumbersKey]
+                let keys = [CNContactGivenNameKey, CNContactFamilyNameKey]
                 let request = CNContactFetchRequest(keysToFetch: keys as [CNKeyDescriptor])
                 do{
                     try store.enumerateContacts(with: request, usingBlock: {(contact, stopPointerIfYouWantStopEnumerating) in
-                        let setContact = Contact(firstName: contact.givenName, familyName: contact.givenName, number: contact.phoneNumbers.first?.value.stringValue ?? "conatct got no number")
+                        let setContact = Contact(firstName: contact.givenName, familyName: contact.familyName)
 //                        setContact.delegate = self
                         tempContacts.append(setContact)
                     })
@@ -73,13 +73,6 @@ extension ContactsViewController: UITableViewDataSource, UITableViewDelegate{
     }
     
 }
-
-extension ContactsViewController: ContactDelegate {
-    func didFinishUpdates() {
-        contactListTableView.reloadData()
-    }
-}
-    
 
 
 

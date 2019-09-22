@@ -15,12 +15,9 @@ class Contact {
     let familyName: String
 //    let number: String
 
-    init(firstName: String, familyName: String, number: String) {
+    init(firstName: String, familyName: String) {
         self.firstName = firstName
         self.familyName = familyName
     }
 }
 
-protocol ContactDelegate: class {
-    func didFinishUpdates()
-}

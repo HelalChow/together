@@ -130,9 +130,9 @@
 			children = (
 				1BAAFC2F23369CEE0042F988 /* AppDelegate.swift */,
 				1BAAFC3323369CEE0042F988 /* Main.storyboard */,
+				1BEAB2212336A47F005580F4 /* ProfileViewController.swift */,
 				1BEAB21D2336A450005580F4 /* MapViewController.swift */,
 				1BEAB21F2336A473005580F4 /* DetailsViewController.swift */,
-				1BEAB2212336A47F005580F4 /* ProfileViewController.swift */,
 				1BEAB22723370196005580F4 /* ContactsViewController.swift */,
 				1BEAB2232336A49D005580F4 /* EventsViewCell.swift */,
 				1BEAB229233704CA005580F4 /* ContactTableViewCell.swift */,

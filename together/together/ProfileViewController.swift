@@ -10,7 +10,7 @@ import UIKit
 
 class ProfileViewController: UIViewController {
     
-    @IBOutlet weak var eventTableView: UITableView!
+    @IBOutlet weak var eventTableView: UITableView!   
     
     var events: [Event] = []
     

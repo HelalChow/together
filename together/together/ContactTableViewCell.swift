@@ -14,8 +14,11 @@ class ContactTableViewCell: UITableViewCell {
     @IBOutlet weak var profileView: UIImageView!
     @IBOutlet weak var pointsLabel: UILabel!
     
+    
+    
     func setContact(contact: Contact) {
         nameLabel.text = contact.firstName + " " + contact.familyName
+        
         
     }
     
