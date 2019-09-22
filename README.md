@@ -9,7 +9,7 @@
 
 
 ## [Video Walkthrough](https://drive.google.com/file/d/15Emb15vuooPL-Ng8_mLbU2g3ckXF1Lmp/view?usp=sharing)
-![g1](g1.gif)
+![g1](Together-1.png)
 ![g1](g2.gif)
 
 
