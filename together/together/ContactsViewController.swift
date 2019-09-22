@@ -52,8 +52,7 @@ class ContactsViewController: UIViewController {
 extension ContactsViewController: UITableViewDataSource, UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
-//        return contactList.count
+        return contactList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -63,7 +62,7 @@ extension ContactsViewController: UITableViewDataSource, UITableViewDelegate{
             print("cellforrowat dont work")
             fatalError()
         }
-        cell.setContact(contact: currCell)
+        cell.setContact(currCell, indexPath.row)
         return cell
     }
     
