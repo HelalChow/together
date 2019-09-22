@@ -9,6 +9,7 @@
 import UIKit
 import Firebase
 import GoogleSignIn
+import Parse
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
@@ -28,6 +29,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         FirebaseApp.configure()
         GIDSignIn.sharedInstance().clientID = "741967906776-4c56rl4fsqvun7ij7psom6a6ojtrbmm2.apps.googleusercontent.com"
         GIDSignIn.sharedInstance().delegate = self
+        Parse.initialize(
+            with: ParseClientConfiguration(block: { (configuration: ParseMutableClientConfiguration) -> Void in
+                configuration.applicationId = "myAppId"
+                configuration.server = "https://together-we-wi.herokuapp.com/parse"
+            })
+        )
+        
         return true
     }
     
