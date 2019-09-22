@@ -7,6 +7,7 @@ target 'together' do
 
   # Pods for together
 	pod 'FlyoverKit', '~> 1.2.0'
+	pod 'GoogleSignIn'
 
   target 'togetherTests' do
     inherit! :search_paths
