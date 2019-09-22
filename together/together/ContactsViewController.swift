@@ -37,7 +37,7 @@ class ContactsViewController: UIViewController {
                 do{
                     try store.enumerateContacts(with: request, usingBlock: {(contact, stopPointerIfYouWantStopEnumerating) in
                         let setContact = Contact(firstName: contact.givenName, familyName: contact.givenName, number: contact.phoneNumbers.first?.value.stringValue ?? "conatct got no number")
-                        setContact.delegate = self
+//                        setContact.delegate = self
                         tempContacts.append(setContact)
                     })
                 } catch let err{ print("enumeration fail", err) }

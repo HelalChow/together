@@ -20,3 +20,7 @@ class Contact {
         self.familyName = familyName
     }
 }
+
+protocol ContactDelegate: class {
+    func didFinishUpdates()
+}
