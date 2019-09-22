@@ -9,6 +9,16 @@
 
 
 ## [Video Walkthrough](https://drive.google.com/file/d/15Emb15vuooPL-Ng8_mLbU2g3ckXF1Lmp/view?usp=sharing)
+<div style="display: inline-block;">
+  <img src="t1.png"  width="400">
+  <!-- <img src="assets/"  width="295"> -->
+  <!-- <img src="assets/"  width="400"> -->
+</div><br/>
+<div style="display: inline-block;">
+  <img src="assets/forcast.gif"  width="400">
+  <!-- <img src="assets/"  width="295"> -->
+  <!-- <img src="assets/"  width="400"> -->
+</div><br/>
 ![g1](t1.png)
 ![g1](t2.png)
 ![g1](t3.png)
