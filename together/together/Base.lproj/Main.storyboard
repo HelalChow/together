@@ -13,7 +13,7 @@
         <!--Map View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MapViewController" customModule="together" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Map View Controller" id="BYZ-38-t0r" customClass="MapViewController" customModule="together" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -186,7 +186,7 @@
                                     <color key="titleColor" red="0.50533828449999996" green="0.77670923219999999" blue="0.56942497000000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
-                                    <segue destination="m49-ou-jSN" kind="presentation" id="0F2-19-q9R"/>
+                                    <segue destination="LzM-je-Kxc" kind="showDetail" id="7Yg-8K-ufW"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -356,7 +356,7 @@
         <!--Login View Controller-->
         <scene sceneID="6gY-Cd-jLG">
             <objects>
-                <viewController title="Login View Controller" id="EZX-qg-azq" customClass="LoginViewController" customModule="together" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="login" title="Login View Controller" id="EZX-qg-azq" customClass="LoginViewController" customModule="together" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6c6-Ph-IBs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -392,6 +392,15 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mmc-e8-opK">
+                                <rect key="frame" x="144" y="606" width="88" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <state key="normal" title="Continue &gt;"/>
+                                <connections>
+                                    <segue destination="LzM-je-Kxc" kind="showDetail" id="xZp-yQ-425"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="dm0-hU-vhf"/>
@@ -438,7 +447,7 @@
         <image name="user" width="20" height="23"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="pdE-cU-tS3"/>
-        <segue reference="Olh-S9-L4X"/>
+        <segue reference="7Yg-8K-ufW"/>
+        <segue reference="8ee-ax-vTK"/>
     </inferredMetricsTieBreakers>
 </document>
