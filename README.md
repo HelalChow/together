@@ -9,8 +9,11 @@
 
 
 ## [Video Walkthrough](https://drive.google.com/file/d/15Emb15vuooPL-Ng8_mLbU2g3ckXF1Lmp/view?usp=sharing)
-![g1](Together-1.png)
-![g1](g2.gif)
+![g1](t1.png)
+![g1](t2.png)
+![g1](t3.png)
+![g1](t4.png)
+![g1](t5.png)
 
 
 ## Stand-Ups / Milestones
@@ -22,7 +25,7 @@
 
 ## Roadblocks Overcame
 - **Pull Requests** with differnt pod folders and stroyboard edits in different branches
-- **Async calls** View Controller life cycle order of call between delegate and protocol methods 
+- **Async calls** View Controller life cycle order of call between delegate and protocol methods
 - **Geofence Limitation** Apple Places a limatation on tracking 20 physical barriers at a time
     - We came up w an algorithim that works around that limitation w/o eating the battery
 
@@ -35,6 +38,6 @@
 
 
 ## Team
-- Backend: **Yasin Ehsan**, Queens College 
-- Native: **Helal Chowdhury**, NYU 
+- Backend: **Yasin Ehsan**, Queens College
+- Native: **Helal Chowdhury**, NYU
 - Backend: **Rageeb Mahtab**, Baruch
