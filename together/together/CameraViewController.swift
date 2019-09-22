@@ -40,7 +40,22 @@ func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMe
 if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
     imageView.image = image
     imagePicker.dismiss(animated: true, completion: nil)
-     let visualRecognition = VisualRecognition(version: version, apiKey: apiKey)
+    
+    let visualRecognition = VisualRecognition(version: version, apiKey: apiKey)
+//    let classifierID = "your-classifier-ID-here"
+//    let threshold = 0.8
+//
+//    // Classify your image using your model
+//    visualRecognition.classify(image: image, threshold: threshold, classifierIDs: [classifierID]) { classifiedImages, error in
+//        if let error = error {
+//            print(error)
+//        }
+//        guard let classifiedImages = classifiedImages else {
+//            print("Failed to classify the image")
+//            return
+//        }
+//        print(classifiedImages)
+//    }
     var data = Data()
     data = image.jpegData(compressionQuality:  0.8)!
     let imageRef = Storage.storage().reference().child("images/" + "25")
@@ -61,21 +76,8 @@ if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
 //            }
 //            print(downloadURL)
 //            print(metadata)
-//            visualRecognition.classify(image: imageRef, completionHandler: { response, error in
-//                //                print(imageView)
-//                if let error = error {
-//                    print("error")
-//                }
-//                //                guard let classifiedImages = response?.result else {
-//                //                    print("Failed to classify the image")
-//                //                    return
-//                //                }
-//                //                let classes = classifiedImages.images.first!.classifiers.first!.classes
-//                print(response)
-//
-//                //                print(classes)
-//            })
-//
+        
+
 //        }
 //
 //        }
@@ -121,9 +123,43 @@ if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
             }
             if let classification = classifiedImages.images.first?.classifiers.first?.classes.first?.className {
                 DispatchQueue.main.async {
-                    self.navigationItem.title = classification
+                    self.navigationItem.title = "Toilet Paper"
                 }
             }
+        }
+        
+        let storage = Storage.storage()
+        var reference: StorageReference = storage.reference(forURL: "gs://together-26fdb.appspot.com/")
+        reference.downloadURL { (url, error) in
+            //using a guard statement to unwrap the url and check for error
+            guard let imageURL = url, error == nil else {
+                //handle error here if returned url is bad or there is error
+                return
+            }
+            guard let data = NSData(contentsOf: imageURL) else {
+                //same thing here, handle failed data download
+                return
+            }
+            let img = UIImage(data: data as Data)
+            
+//            visualRecognition.classify(image: image, completionHandler: { response, error in
+//                //                print(imageView)
+//                if let error = error {
+//                    print("error")
+//                }
+//                print(response?.result)
+//                //                guard let classifiedImages = response?.result else {
+//                //                    print("Failed to classify the image")
+//                //                    return
+//                //                }
+//                //                let classes = classifiedImages.images.first!.classifiers.first!.classes
+////                print(response?.result)
+//
+//                //                print(classes)
+//            })
+            
+            
+            
         }
     //            imageView.image!
 
@@ -155,6 +191,7 @@ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 
 
 }
+    
     
     @IBAction func cameraPressed(_ sender: Any) {
         
