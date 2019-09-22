@@ -36,10 +36,10 @@
             </objects>
             <point key="canvasLocation" x="1868" y="20.689655172413794"/>
         </scene>
-        <!--Item-->
+        <!--Profile View Controller-->
         <scene sceneID="9F6-aJ-XuL">
             <objects>
-                <viewController id="C7t-kn-rII" customClass="ProfileViewController" customModule="together" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Profile View Controller" title="Profile View Controller" id="C7t-kn-rII" customClass="ProfileViewController" customModule="together" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="k4B-hz-zL6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -174,7 +174,23 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nk1-qv-hZE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2252" y="854.92610837438428"/>
+            <point key="canvasLocation" x="2358" y="817"/>
+        </scene>
+        <!--Contacts View Controller-->
+        <scene sceneID="NIr-U5-lbm">
+            <objects>
+                <viewController title="Contacts View Controller" id="6nr-9d-iJ8" customClass="ContactsViewController" customModule="together" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QFX-oZ-GAo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="RZ7-H1-zio"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="hwa-DF-cde"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3sR-t4-0bq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="129" y="865"/>
         </scene>
         <!--Details View Controller-->
         <scene sceneID="Sm3-OM-L0D">
@@ -252,6 +268,7 @@
                     <connections>
                         <segue destination="m49-ou-jSN" kind="relationship" relationship="viewControllers" id="pdE-cU-tS3"/>
                         <segue destination="C7t-kn-rII" kind="relationship" relationship="viewControllers" id="Olh-S9-L4X"/>
+                        <segue destination="6nr-9d-iJ8" kind="relationship" relationship="viewControllers" id="SzK-LF-lh7"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q8m-dZ-vt5" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -269,6 +286,6 @@
         <image name="user" width="20" height="23"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="7ZE-1X-qBN"/>
+        <segue reference="Olh-S9-L4X"/>
     </inferredMetricsTieBreakers>
 </document>

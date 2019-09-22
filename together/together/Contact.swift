@@ -13,9 +13,10 @@ class Contact {
     
     let firstName: String
     let familyName: String
-    let number: String
+//    let number: String
 
     init(firstName: String, familyName: String, number: String) {
         self.firstName = firstName
         self.familyName = familyName
+    }
 }
