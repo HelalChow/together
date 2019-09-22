@@ -2,9 +2,9 @@
 
 **About:** Connects users with NGO's to create an accessible and collaborative way to help make a difference in the community
 
-**Built With:** Swift, Xcode, Zeplin, Google Cloud using MVC Software Pattern 
+**Built With:** Swift, Xcode, Zeplin, Google Cloud using MVC Software Pattern, IBM Watson Image Recognition, IBM Watson Assistant, and Kubernetes (IBM and Google Cloud)
 
-**Frameworks:** UIKit, MapKit, CoreLocation, FlyoverKit, UserNotifications, EventKit, Contacts
+**Frameworks:** UIKit, MapKit, CoreLocation, FlyoverKit, UserNotifications, EventKit, Contacts, Firebase, GoogleSignIn, Parse, Speech
 
 
 
@@ -35,6 +35,6 @@
 
 
 ## Team
-- Native/Backend: **Yasin Ehsan**, Queens College 
+- Backend: **Yasin Ehsan**, Queens College 
 - Native: **Helal Chowdhury**, NYU 
-- Designer: **Meng Shi**, Baruch
+- Backend: **Rageeb Mahtab**, Baruch
