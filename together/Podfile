@@ -8,6 +8,8 @@ target 'together' do
   # Pods for together
 	pod 'FlyoverKit', '~> 1.2.0'
 	pod 'GoogleSignIn'
+	pod 'Firebase/Auth'
+	pod 'Firebase/Analytics'
 
   target 'togetherTests' do
     inherit! :search_paths
