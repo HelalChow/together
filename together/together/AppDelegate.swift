@@ -48,12 +48,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
               withError error: Error!) {
         if let error = error {
             if (error as NSError).code == GIDSignInErrorCode.hasNoAuthInKeychain.rawValue {
-                print("The user has not signed in before or they have since signed out.")
+//                print("The user has not signed in before or they have since signed out.")
             } else {
-                print("\(error.localizedDescription)")
+//                print("\(error.localizedDescription)")
             }
             return
         }
+        print("HHJAJHSJHGJGAJGJHS")
+        
         // Perform any operations on signed in user here.
         let userId = user.userID                  // For client-side use only!
         let idToken = user.authentication.idToken // Safe to send to the server
@@ -63,6 +65,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         let email = user.profile.email
         // ...
     }
+    
+   
+    
+    
 
     func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!,
               withError error: Error!) {

@@ -23,10 +23,27 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         GIDSignIn.sharedInstance()?.presentingViewController = self
         
+        
         // Automatically sign in the user.
         GIDSignIn.sharedInstance()?.restorePreviousSignIn()
-        
+//        performSegue(withIdentifier: "MapViewController", sender: nil)
         // ...
+    }
+    
+    
+    
+    func signIn(signIn: GIDSignIn!, didSignInForUser user: GIDGoogleUser!,
+                withError error: NSError!) {
+        if (error == nil) {
+            // Perform any operations on signed in user here.
+            // ...
+            self.performSegue(withIdentifier: "MapViewController", sender: nil)
+            
+        
+        } else {
+//            print("\(error.localizedDescription)")
+            
+        }
     }
     
 
