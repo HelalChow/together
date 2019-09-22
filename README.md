@@ -10,7 +10,8 @@
 
 ## [Video Walkthrough](https://drive.google.com/file/d/15Emb15vuooPL-Ng8_mLbU2g3ckXF1Lmp/view?usp=sharing)
 <div style="display: inline-block;">
-  <img src="t1.png"  width="400">
+  <img src="t2.png"  width="200">
+  <img src="t3.png"  width="200">
   <!-- <img src="assets/"  width="295"> -->
   <!-- <img src="assets/"  width="400"> -->
 </div><br/>
