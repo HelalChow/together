@@ -186,7 +186,7 @@
                                     <color key="titleColor" red="0.50533828449999996" green="0.77670923219999999" blue="0.56942497000000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
-                                    <segue destination="LzM-je-Kxc" kind="showDetail" id="7Yg-8K-ufW"/>
+                                    <segue destination="LzM-je-Kxc" kind="showDetail" id="1XD-pW-MWF"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -200,7 +200,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nk1-qv-hZE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1618" y="883"/>
+            <point key="canvasLocation" x="1015" y="865"/>
         </scene>
         <!--Contacts View Controller-->
         <scene sceneID="NIr-U5-lbm">
@@ -288,7 +288,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3sR-t4-0bq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2548" y="881.5270935960591"/>
+            <point key="canvasLocation" x="1942" y="865"/>
         </scene>
         <!--Details View Controller-->
         <scene sceneID="Sm3-OM-L0D">
@@ -447,7 +447,7 @@
         <image name="user" width="20" height="23"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="7Yg-8K-ufW"/>
-        <segue reference="8ee-ax-vTK"/>
+        <segue reference="1XD-pW-MWF"/>
+        <segue reference="Vfj-cY-hV2"/>
     </inferredMetricsTieBreakers>
 </document>
