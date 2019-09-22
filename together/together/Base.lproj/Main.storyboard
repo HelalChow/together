@@ -353,6 +353,21 @@
             </objects>
             <point key="canvasLocation" x="1016" y="21"/>
         </scene>
+        <!--Login View Controller-->
+        <scene sceneID="6gY-Cd-jLG">
+            <objects>
+                <viewController title="Login View Controller" id="EZX-qg-azq" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6c6-Ph-IBs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="dm0-hU-vhf"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jhU-rt-a9d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-855" y="21"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Wfl-QF-fg7">
             <objects>
