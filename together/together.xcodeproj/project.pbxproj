@@ -24,6 +24,11 @@
 		1BEAB22823370196005580F4 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEAB22723370196005580F4 /* ContactsViewController.swift */; };
 		1BEAB22A233704CA005580F4 /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEAB229233704CA005580F4 /* ContactTableViewCell.swift */; };
 		1BEAB22C23373665005580F4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEAB22B23373665005580F4 /* LoginViewController.swift */; };
+		496260C823375ECA0036B627 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496260C723375ECA0036B627 /* CameraViewController.swift */; };
+		496260CA233767250036B627 /* VisualRecognitionV3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 496260C9233767240036B627 /* VisualRecognitionV3.framework */; };
+		496260CB233767250036B627 /* VisualRecognitionV3.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 496260C9233767240036B627 /* VisualRecognitionV3.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		496260CE233768E70036B627 /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 496260CD233768E70036B627 /* RestKit.framework */; };
+		496260CF233768E70036B627 /* RestKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 496260CD233768E70036B627 /* RestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7FF30FC440962406D222E6F5 /* Pods_together.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F350698189ACC9CA7918841 /* Pods_together.framework */; };
 		E186D11A7A6BE6075DA960CA /* Pods_togetherTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 376A50667605E71D7F715A80 /* Pods_togetherTests.framework */; };
 /* End PBXBuildFile section */
@@ -44,6 +49,21 @@
 			remoteInfo = together;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		496260CC233767250036B627 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				496260CB233767250036B627 /* VisualRecognitionV3.framework in Embed Frameworks */,
+				496260CF233768E70036B627 /* RestKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		12E80258529BC72907D4D1DB /* Pods-togetherUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-togetherUITests.release.xcconfig"; path = "Target Support Files/Pods-togetherUITests/Pods-togetherUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -75,6 +95,9 @@
 		39ED524D1BF3FDB5301831EE /* Pods_togetherUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_togetherUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C20C1684F12F1777517A96F /* Pods-togetherTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-togetherTests.release.xcconfig"; path = "Target Support Files/Pods-togetherTests/Pods-togetherTests.release.xcconfig"; sourceTree = "<group>"; };
 		44BCD29B38C4B1E7D1A2A9D7 /* Pods-togetherTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-togetherTests.debug.xcconfig"; path = "Target Support Files/Pods-togetherTests/Pods-togetherTests.debug.xcconfig"; sourceTree = "<group>"; };
+		496260C723375ECA0036B627 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		496260C9233767240036B627 /* VisualRecognitionV3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VisualRecognitionV3.framework; path = Carthage/Build/iOS/VisualRecognitionV3.framework; sourceTree = "<group>"; };
+		496260CD233768E70036B627 /* RestKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RestKit.framework; path = Carthage/Build/iOS/RestKit.framework; sourceTree = "<group>"; };
 		8265E915027D43356A857058 /* Pods-together.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-together.release.xcconfig"; path = "Target Support Files/Pods-together/Pods-together.release.xcconfig"; sourceTree = "<group>"; };
 		A685EC6BF7A26B065A0CC94D /* Pods-togetherUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-togetherUITests.debug.xcconfig"; path = "Target Support Files/Pods-togetherUITests/Pods-togetherUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,6 +108,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7FF30FC440962406D222E6F5 /* Pods_together.framework in Frameworks */,
+				496260CA233767250036B627 /* VisualRecognitionV3.framework in Frameworks */,
+				496260CE233768E70036B627 /* RestKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +135,8 @@
 		1BAAFC2323369CEE0042F988 = {
 			isa = PBXGroup;
 			children = (
+				496260CD233768E70036B627 /* RestKit.framework */,
+				496260C9233767240036B627 /* VisualRecognitionV3.framework */,
 				1BAAFC2E23369CEE0042F988 /* together */,
 				1BAAFC4323369CF00042F988 /* togetherTests */,
 				1BAAFC4E23369CF00042F988 /* togetherUITests */,
@@ -147,6 +174,7 @@
 				1BAAFC3823369CEF0042F988 /* LaunchScreen.storyboard */,
 				1BAAFC3B23369CEF0042F988 /* Info.plist */,
 				1BA5E5B42337578700B70DA8 /* GoogleService-Info.plist */,
+				496260C723375ECA0036B627 /* CameraViewController.swift */,
 			);
 			path = together;
 			sourceTree = "<group>";
@@ -205,6 +233,7 @@
 				1BAAFC2A23369CEE0042F988 /* Resources */,
 				B327C7C4138FC436B6773F8B /* [CP] Embed Pods Frameworks */,
 				3FED65FDB8722BFD284FF276 /* [CP] Copy Pods Resources */,
+				496260CC233767250036B627 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -422,22 +451,40 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-together/Pods-together-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/AppAuth/AppAuth.framework",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
 				"${BUILT_PRODUCTS_DIR}/FlyoverKit/FlyoverKit.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMAppAuth/GTMAppAuth.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppAuth.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FlyoverKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMAppAuth.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -452,6 +499,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				496260C823375ECA0036B627 /* CameraViewController.swift in Sources */,
 				1BEAB2222336A47F005580F4 /* ProfileViewController.swift in Sources */,
 				1BEAB2242336A49D005580F4 /* EventsViewCell.swift in Sources */,
 				1BAAFC3023369CEE0042F988 /* AppDelegate.swift in Sources */,
@@ -638,13 +686,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FQX45R5BVV;
+				DEVELOPMENT_TEAM = N557RJHTWH;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = together/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = hchowdhury.together;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rageeb.together;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -657,13 +709,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FQX45R5BVV;
+				DEVELOPMENT_TEAM = N557RJHTWH;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = together/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = hchowdhury.together;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rageeb.together;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -6,10 +6,16 @@ target 'together' do
   use_frameworks!
 
   # Pods for together
+	pod 'Parse'
+	pod 'AlamofireImage'
+	pod 'Alamofire'
 	pod 'FlyoverKit', '~> 1.2.0'
 	pod 'GoogleSignIn'
 	pod 'Firebase/Auth'
 	pod 'Firebase/Analytics'
+	pod 'FirebaseCore'
+	pod 'FirebaseFirestore'
+	pod 'Firebase/Storage'
 
   target 'togetherTests' do
     inherit! :search_paths
