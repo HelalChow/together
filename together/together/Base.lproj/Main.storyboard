@@ -497,6 +497,7 @@
         <image name="user" width="20" height="23"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="K4D-Ll-ZA4"/>
         <segue reference="1XD-pW-MWF"/>
         <segue reference="7ZE-1X-qBN"/>
     </inferredMetricsTieBreakers>
