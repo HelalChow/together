@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LzM-je-Kxc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EZX-qg-azq">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -40,7 +40,7 @@
         <scene sceneID="QLJ-Xb-6ve">
             <objects>
                 <navigationController id="b8T-N0-ncd" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Camera" id="xW1-If-rtJ"/>
+                    <tabBarItem key="tabBarItem" title="Camera" selectedImage="camera2" id="xW1-If-rtJ"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dpR-D6-fnu">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -484,6 +484,7 @@
     </scenes>
     <resources>
         <image name="backgroundShapes" width="375" height="783"/>
+        <image name="camera2" width="225" height="225"/>
         <image name="hinterrhein" width="375" height="812"/>
         <image name="img" width="192" height="192"/>
         <image name="mapMarkedAlt" width="27" height="24"/>
@@ -496,7 +497,7 @@
         <image name="user" width="20" height="23"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="1XD-pW-MWF"/>
-        <segue reference="7ZE-1X-qBN"/>
+        <segue reference="xZp-yQ-425"/>
+        <segue reference="Vfj-cY-hV2"/>
     </inferredMetricsTieBreakers>
 </document>
